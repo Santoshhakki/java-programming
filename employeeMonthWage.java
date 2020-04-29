@@ -14,21 +14,21 @@
 		case 0:
 			int IS_FULLTIME=1;
 			double fullTime=Math.floor(Math.random()*10)%2;
-			double totalMonthWage;
+			double MonthWage;
 			System.out.println("Employee is present");
 
 			switch ((int) fullTime){
 			case 1: empWage=wagePerHour*fullDay;
-				totalMonthWage=empWage*monthDays;
-				System.out.println("Employee works fulltime and Employee wage is: "+ empWage);
-				System.out.println("Employee wage for a month is: "+ totalMonthWage);
+				monthWage=empWage*monthDays;
+				System.out.println("fulltime Employee wage is: "+ empWage);
+				System.out.println("Employeewage for a month is: "+ monthWage);
 
 			break;
 
 			case 0: empWage=wagePerHour*halfDay;
-				totalMonthWage=empWage*monthDays;
+				monthWage=empWage*monthDays;
                                 System.out.println("Employee works parttime and Employee wage is: "+ empWage);
-				System.out.println("Employee wage for a month is: "+ totalMonthWage);
+				System.out.println("Employee wage for a month is: "+monthWage);
 			break;
 			}
 		break;
