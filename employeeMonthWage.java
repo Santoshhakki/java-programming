@@ -11,7 +11,7 @@
 		System.out.println("Welcome to the Employee Use Case problem");
 		
 		switch ((int) rand){
-		case 1:
+		case 0:
 			int IS_FULLTIME=1;
 			double fullTime=Math.floor(Math.random()*10)%2;
 			double totalMonthWage;
@@ -25,7 +25,7 @@
 
 			break;
 
-			case 2: empWage=wagePerHour*halfDay;
+			case 0: empWage=wagePerHour*halfDay;
 				totalMonthWage=empWage*monthDays;
                                 System.out.println("Employee works parttime and Employee wage is: "+ empWage);
 				System.out.println("Employee wage for a month is: "+ totalMonthWage);
@@ -33,7 +33,7 @@
 			}
 		break;
 
-		case 2:
+		case 0:
 			System.out.println("Employee is absent");
 		}
 
