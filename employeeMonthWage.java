@@ -1,4 +1,3 @@
-public class EmployeeUseCase{
 	
 	public static void main(String[] args){
 		int IS_PRESENT=1;
@@ -8,30 +7,28 @@ public class EmployeeUseCase{
 		double empWage;
 		double monthDays=20;
 		
-		double empCheck=Math.floor(Math.random() * 10 ) %2;
+		double rand=Math.floor(Math.random() * 10 ) %2;
 		System.out.println("Welcome to the Employee Use Case problem");
 		
-		switch ((int) empCheck){
-		case 1:
+		switch ((int) rand){
+		case 0:
 			int IS_FULLTIME=1;
-			double fullTimeCheck=Math.floor(Math.random()*10)%2;
-			double totalMonthWage;
+			double fullTime=Math.floor(Math.random()*10)%2;
+			double MonthWage;
 			System.out.println("Employee is present");
 
-			switch ((int) fullTimeCheck){
-			case 1:
-				empWage=wagePerHour*fullDay;
-				totalMonthWage=empWage*monthDays;
-				System.out.println("Employee works fulltime and Employee wage is: "+ empWage);
-				System.out.println("Employee wage for a month is: "+ totalMonthWage);
+			switch ((int) fullTime){
+			case 1: empWage=wagePerHour*fullDay;
+				monthWage=empWage*monthDays;
+				System.out.println("fulltime Employee wage is: "+ empWage);
+				System.out.println("Employeewage for a month is: "+ monthWage);
 
 			break;
 
-			case 0:
-				empWage=wagePerHour*halfDay;
-				totalMonthWage=empWage*monthDays;
+			case 0: empWage=wagePerHour*halfDay;
+				monthWage=empWage*monthDays;
                                 System.out.println("Employee works parttime and Employee wage is: "+ empWage);
-				System.out.println("Employee wage for a month is: "+ totalMonthWage);
+				System.out.println("Employee wage for a month is: "+monthWage);
 			break;
 			}
 		break;
